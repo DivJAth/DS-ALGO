@@ -28,4 +28,21 @@ class Solution:
             right_prod[i-1] = nums[i] * right_prod[i]        
         for i in range(len(nums)):
             nums[i] = left_prod[i] * right_prod[i]
-        return nums        
+        return nums   
+
+# Attempt 2
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        left = [1]
+        for i in range(1,len(nums)):
+            left.append(left[i-1]*nums[i-1])
+        
+        right = 1
+        for j in range(len(nums)-1, -1, -1):
+            left[j] *= right
+            right*=nums[j]
+        
+        return left
+            
+      
+     

@@ -38,8 +38,29 @@ sum2%k - sum1%k = 0
 sum2%k = sum1%k
 
 """
+class Solution:
+    def checkSubarraySum(self, nums: List[int], k: int) -> bool:
+        if len(nums) < 2:
+            return False
+        remainderIndex = {0:[-1, -float('inf')]}
+        cumSum = 0
+        for i in range(0, len(nums)):
+            cumSum+=nums[i]
+            remInd = cumSum%k
+            # print(nums[i], cumSum, remInd)
+            if (len(remainderIndex.get(remInd, [])) == 0):
+                remainderIndex[remInd] = [i, -float('inf')]
+            else:
+                remainderIndex[remInd][1] = i
+                
+        for key in remainderIndex.keys():
+            val = remainderIndex[key]
+            if val[1]-val[0] > 1:
+                return True
+        
+        return False
 
-
+# Attempt 2
 class Solution:
     def checkSubarraySum(self, nums, k):
         if len(nums) < 2:
