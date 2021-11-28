@@ -1,0 +1,40 @@
+	Pattern 1: 0/1 Knapsack
+1	0/1 Knapsack
+2	Equal Subset Sum Partition
+3	Subset Sum
+4	Minimum Subset Sum Difference
+5	Count of Subset Sum
+6	Target Sum
+	Pattern 2: Unbounded Knapsack
+7	Unbounded Knapsack
+8	Rod Cutting
+9	Coin Change
+10	Minimum Coin Change
+11	Maximum Ribbon Cut
+	Pattern 3: Fibonacci Numbers
+12	Fibonacci numbers
+13	Staircase
+14	Number factors
+15	Minimum jumps to reach the end
+16	Minimum jumps with fee
+17	House thief
+	Pattern 4: Palindromic Subsequence
+18	Longest Palindromic Subsequence
+19	Longest Palindromic Substring
+20	Count of Palindromic Substrings
+21	Minimum Deletions in a String to make it a Palindrome
+22	Palindromic Partitioning
+	Pattern 5: Longest Common Substring
+23	Longest Common Substring
+24	Longest Common Subsequence
+25	Minimum Deletions & Insertions to Transform a String into another
+26	Longest Increasing Subsequence
+27	Maximum Sum Increasing Subsequence
+28	Shortest Common Super-sequence
+29	Minimum Deletions to Make a Sequence Sorted
+30	Longest Repeating Subsequence
+31	Subsequence Pattern Matching
+32	Longest Bitonic Subsequence
+33	Longest Alternating Subsequence
+34	Edit Distance
+35	Strings Interleaving
