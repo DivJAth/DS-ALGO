@@ -26,7 +26,6 @@ class Solution:
             max_path[0] = max(max_path[0] , left+right+root.val)
             return max(left, right) +root.val
         return 0
-            
     
     def maxPathSum(self, root: Optional[TreeNode]) -> int:
         max_path = [-float("inf")]
